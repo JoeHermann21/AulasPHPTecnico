@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Formulário</title>
+	</head>
+	<body bgcolor="#FFF8DC">
+	<form>
+		<h1 align="center">Cadastre um filme</h1>
+		Nome do Diretor: <input type="text" name="nome" id="txtNome"> <br>
+		<br>		
+		Selecione um ou vários gêneros:<br>
+			<input type="checkbox" name="generofilme" value="1"> Ação
+			<input type="checkbox" name="generofilme" value="2"> Aventura
+			<input type="checkbox" name="generofilme" value="3"> Comédia
+			<input type="checkbox" name="generofilme" value="4"> Fantasia
+			<input type="checkbox" name="generofilme" value="5"> Ficção
+			<input type="checkbox" name="generofilme" value="6"> Terror 
+		<br><br>
+		Classificação:
+			<input type="radio" name="idade" value="1"> Livre
+			<input type="radio" name="idade" value="2"> 10 Anos
+			<input type="radio" name="idade" value="3"> 12 Anos
+			<input type="radio" name="idade" value="4"> 14 Anos
+			<input type="radio" name="idade" value="5"> 16 Anos
+			<input type="radio" name="idade" value="6"> 18 Anos
+		<br><br>
+		Data de lançamento: 
+			<input type="date" name="nascimento" min="1888-10-14" max="2022-12-31">	<br><br>	
+		Sinopse:<br>
+			<textarea rows="5" cols="30"></textarea><br><br>
+		Estúdio:
+			<select name="estudio">
+				<option value="WB">Warner Bros</option>
+				<option value="UN">Universal</option>
+				<option value="FOX">Fox</option>
+				<option value="MGM">MGM</option>
+				<option value="A">A24</option>
+				<option value="BL">Blumhouse</option>
+			</select><br><br>	
+		Selecionar Pôster do Filme:
+			<input id="getFile" type="file"/><br><br>
+		<button id="filme">Cadastrar Filme</button><br><br>
+		</form>   
+	</body>
+</html>
